@@ -11,7 +11,8 @@ class JokeServer {
     
     JokeServer() {
         DB db = mongo.getDB('icndb')
-        def jokesInDB = db.cnjokes.find([categories: [$ne : 'explicit']])
+//        def jokesInDB = db.cnjokes.find([categories: [$ne : 'explicit']])
+        def jokesInDB = db.cnjokes.find([categories: 'nerdy'])
         jokesInDB.each { j ->
             jokes[j.id] = j.joke
         }
