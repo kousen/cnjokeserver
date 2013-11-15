@@ -1,6 +1,4 @@
 import static ratpack.groovy.Groovy.*
-//import static ratpack.groovy.Template.groovyTemplate
-
 import com.kousenit.JokeServer
 
 JokeServer server = JokeServer.instance
