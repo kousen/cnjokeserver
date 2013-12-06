@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 class JokeServerTest {
-    JokeServer server = JokeServer.instance
+    JokeServer server = new JokeServer()
 
     @Test
     public void testGetJokeFirstNameLastName() {

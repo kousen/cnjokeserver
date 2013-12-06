@@ -3,7 +3,7 @@ import static ratpack.groovy.Groovy.*
 
 import com.kousenit.JokeServer
 
-JokeServer server = JokeServer.instance
+JokeServer server = new JokeServer()
 
 ratpack {
     handlers {

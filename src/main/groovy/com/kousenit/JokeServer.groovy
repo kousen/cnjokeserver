@@ -3,7 +3,6 @@ package com.kousenit
 import com.gmongo.GMongo
 import com.mongodb.DB
 
-@Singleton
 class JokeServer {
     GMongo mongo = new GMongo()
     Map jokes = [:]
