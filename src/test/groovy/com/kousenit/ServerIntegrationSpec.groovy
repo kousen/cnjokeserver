@@ -2,12 +2,13 @@ package com.kousenit
 
 import ratpack.groovy.test.LocalScriptApplicationUnderTest
 import ratpack.groovy.test.TestHttpClient
+import ratpack.groovy.test.TestHttpClients
 import spock.lang.Specification
 
 class ServerIntegrationSpec extends Specification {
 
     def aut = new LocalScriptApplicationUnderTest()
-    @Delegate TestHttpClient client = aut.httpClient()
+    @Delegate TestHttpClient client = TestHttpClients.testHttpClient(aut)
 
     def setup() {
         resetRequest()
