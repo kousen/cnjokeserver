@@ -1,4 +1,4 @@
-import static ratpack.groovy.Groovy.*
+import static ratpack.groovy.Groovy.ratpack
 //import static ratpack.groovy.Template.groovyTemplate
 
 import com.kousenit.JokeServer
